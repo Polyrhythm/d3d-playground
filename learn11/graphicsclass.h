@@ -2,6 +2,9 @@
 #define _GRAPHICSCLASS_H_
 
 #include "d3dclass.h"
+#include "cameraclass.h"
+#include "modelclass.h"
+#include "colorshader.h"
 
 const bool FULL_SCREEN = false;
 const bool VSYNC_ENABLED = true;
@@ -24,6 +27,9 @@ private:
     bool Render();
 
     D3DClass* _Direct3D;
+    CameraClass* _Camera;
+    ModelClass* _Model;
+    ColorShaderClass* _ColorShader;
 };
 
 #endif
