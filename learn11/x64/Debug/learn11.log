@@ -1,9 +1,0 @@
-﻿  GraphicsClass.cpp
-  cameraclass.cpp
-  Generating Code...
-  Compiling...
-  SystemClass.cpp
-c:\users\polyr\development\cpp\d3d-playground\learn11\systemclass.cpp(79): warning C4390: ';': empty controlled statement found; is this the intent?
-  Generating Code...
-  learn11.vcxproj -> C:\Users\polyr\Development\cpp\d3d-playground\x64\Debug\learn11.exe
-  learn11.vcxproj -> C:\Users\polyr\Development\cpp\d3d-playground\x64\Debug\learn11.pdb (Partial PDB)

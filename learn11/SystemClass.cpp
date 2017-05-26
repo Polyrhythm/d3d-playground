@@ -76,7 +76,7 @@ void SystemClass::Run()
 
     done = false;
     while (!done) {
-        if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE));
+        if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
         {
             TranslateMessage(&msg);
             DispatchMessage(&msg);

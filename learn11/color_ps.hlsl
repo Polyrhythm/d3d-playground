@@ -4,7 +4,7 @@ struct PS_IN
     float4 color : COLOR;
 };
 
-float4 ColorPixelShader(PS_IN input)
+float4 ColorPixelShader(PS_IN input): SV_TARGET
 {
     return input.color;
 }

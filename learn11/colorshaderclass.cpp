@@ -23,8 +23,8 @@ bool ColorShaderClass::Initialize(ID3D11Device* device, HWND hwnd)
 {
     bool result;
 
-    result = InitializeShader(device, hwnd, L"./learn11/color_vs.hlsl",
-        L"./learn11/color_ps.hlsl");
+    result = InitializeShader(device, hwnd, L"./color_vs.hlsl",
+        L"./color_ps.hlsl");
     if (!result)
     {
         return false;
@@ -257,7 +257,7 @@ bool ColorShaderClass::SetShaderParameters(ID3D11DeviceContext* deviceContext,
     deviceContext->Unmap(_matrixBuffer, 0);
 
     bufferNumber = 0;
-    deviceContext->VSGetConstantBuffers(bufferNumber, 1, &_matrixBuffer);
+    deviceContext->VSSetConstantBuffers(bufferNumber, 1, &_matrixBuffer);
 
     return true;
 }
